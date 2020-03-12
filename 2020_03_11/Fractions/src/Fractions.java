@@ -12,12 +12,27 @@ public class Fractions {
     {
         //throw new UnsupportedOperationException("Fractions(int n, int d) not yet implemented");
         this.numerator=n;
-        this.denominator=d;
+        this.setDenominator(d);
+        //this.denominator=d;
     }
     
     public Fractions subtract(Fractions f2)
     {
-        throw new UnsupportedOperationException("subtract(Fractions f2) not yet implemented");
+        //throw new UnsupportedOperationException("subtract(Fractions f2) not yet implemented");
+        int a = this.numerator;
+        int b = this.denominator;
+        int c = f2.numerator;
+        int d = f2.denominator;
+        
+        Fractions result = new Fractions();
+        result.setNumerator(a*d-b*c);
+        result.setDenominator(b*d);
+        
+        int g = this.gcd(result.numerator, result.denominator );
+        result.setNumerator(result.numerator/g);
+        result.setDenominator(result.denominator/g);
+        
+        return result;
     }
     
     public Fractions multiply(Fractions f2)

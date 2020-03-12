@@ -2,7 +2,7 @@
 public class Driver {
 
     public static void main(String[] args) {
-        /*Fractions a = new Fractions();
+        Fractions a = new Fractions();
         Fractions b = new Fractions();
         
         System.out.println("a.toString(): "+a.toString());
@@ -26,7 +26,7 @@ public class Driver {
         
         c = b.add(a);
         System.out.println("c.toString(): "+c.toString());
-        System.out.println("c.getValue(): "+c.getValue());*/
+        System.out.println("c.getValue(): "+c.getValue());
         
         Fractions d = new Fractions();
         java.util.Scanner scanner = new java.util.Scanner(System.in); 
